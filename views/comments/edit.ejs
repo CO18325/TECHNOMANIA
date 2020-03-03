@@ -1,0 +1,39 @@
+<% include ../partials/header %>
+
+<style>
+.titleBar{
+    background-color:#6EB4B6; 
+    margin-left:15%; 
+    margin-right:15%; 
+    border:6px solid white; 
+    border-radius:50px 20px; 
+    padding:1%;
+    margin-top:1%
+} 
+.current-body{
+	font-family:Arial, Geneva, Tahoma, sans-serif;
+	text-align:center;
+	font-size: 25px;
+  line-height: 1.8;
+  color:darkslategray;
+  padding-top:10px;
+}  
+</style>
+
+<!-------------------->
+<div class="current-body">
+	<div class="titleBar">
+  		<h1 style="margin-top:50px">UPDATE REVIEW:-</b></u></h1>
+</div>
+	<br>
+	<div style="width:60%; background-color:darkslategray; padding:10px; color:white; text-align:left; margin-left:20%;border: 2px solid grey;border-radius:50px 25px;">
+		<div style="padding:5%">
+			<a href="/products" class="btn btn-primary btn-lg">GO BACK</a>
+<form action="/products/<%= product_id %>/comments/<%= comment._id %>?_method=PUT" method="POST">
+	<input type="text" name="comment[text]" value="<%=comment.text%>" >
+
+	<button>UPDATE!</button>
+</form>
+</div>
+
+<% include ../partials/footer.ejs %>
