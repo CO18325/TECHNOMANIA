@@ -1,0 +1,23 @@
+<% include partials/header %>
+
+<link rel="stylesheet" href="/stylesheets/profile.css">
+
+<div class="border" style="margin-top: 80px">
+
+
+<h1 style="text-align:center"><b>User Profile</b></h1>
+
+<div class="card">
+  
+  <img src="/images/Studying_Child.jpg" style="width:100%">
+  <h1><%= person.username %></h1>
+  <p class="title">Born on:<br><%= person.DOB %></p>
+  <p><%= person.college %></p>
+  <div style="margin: 24px 0;">
+    
+  </div>
+  <p><button class="btn btn-danger"><%= person.email %></a></button></p>
+</div>
+</div>
+
+<% include partials/footer %>
