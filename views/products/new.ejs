@@ -1,0 +1,67 @@
+<% include ../partials/header.ejs %>
+
+
+<link rel="stylesheet" href="/stylesheets/newProduct.css">
+
+<h1>ENTER NEW PRODUCTS</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<h2 style="text-align: center"><b>WELCOME</b></h2>
+<p style="text-align: center">Free your thoughts</p>
+
+<div class="container">
+  <form action="/products" method="POST">
+    <div class="row">
+      <div class="col-25">
+        <label for="Title"><b>Title</b></label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="Title" name="title" placeholder="Your title..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="Genre"><b>Genre</b></label>
+      </div>
+      <div class="col-75">
+      <select required name="genre" id="Genre">
+      <option value="">GENRE</option>
+      <option>CSE</option>
+      <option>MECHANICAL</option>
+      <option>ELECTRONICS</option>
+      <option>CIVIL</option>
+      <option>ART</option>
+      <option>LITERATURE</option>
+     </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        
+      </div>
+      <div class="col-75">
+        
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="About"><b>About</b></label>
+      </div>
+      <div class="col-75">
+        <textarea id="About" name="content" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <button class="btn">Submit</button>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
