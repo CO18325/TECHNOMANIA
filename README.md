@@ -1,2 +1,2 @@
 # TECHNOMANIA
-A nodeJs based Student Blogging Website
+A NodeJs based Student Blogging Website
